@@ -1,5 +1,6 @@
 exports.up = function(knex) {
   return knex.schema.createTable('posts', function(posts) {
+    // incrementing post ids 
     posts.increments();
 
     posts.string('title', 1024).notNullable();
