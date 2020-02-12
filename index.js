@@ -7,7 +7,7 @@ const server = express();
 server.use(express.json()); // needed to parse JSON from the body
 
 // for URLs beginning with /api/posts
-server.use("/api/posts", hubsRouter );
+server.use("/api/posts", hubsRouter);
 
 server.get("/api/posts", (req, res) => {
   res.send(`<h2>Welcome to Post Comments `);
